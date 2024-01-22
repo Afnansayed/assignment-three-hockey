@@ -10,39 +10,161 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        color_1: '#FF4240',
+                        color_2: '#424247',
+                        color_3: '#FFF',
+                        color_4: '#13131899',
+
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/8400b72255.js" crossorigin="anonymous"></script>
-        <style>
-            body{
-                font-family: 'Manrope', sans-serif;
-            }
-        </style>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8400b72255.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-        <header>
-                <h1>Afnan sayed Razin</h1>
-        </header>
-        <main>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">Hockey<span
+                        class="text-color_1">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+                <ul class="menu menu-horizontal px-1 text-color_2">
+                    <li><a class="text-color_1">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
 
-        </main>
-        <footer>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-5">
+                <img src="Images/Frame (1).png" alt="" class="hidden lg:inline-flex">
+                <a class="btn text-color_3 bg-color_1 lg:px-8">Button</a>
+            </div>
+        </div>
+        <!-- nav End -->
+        <div class="banner relative space-y-5">
+            <div class="carousel w-full  rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 space-x-5">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 bottom-0 space-x-5">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute right-10 bottom-10 lg:w-2/4">
+                <div class="bg-black p-5 lg:p-10  rounded-2xl space-y-5">
+                    <h2 class="text-color_3 text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                    <p class="font-medium text-color_3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                        turpis
+                        placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto my-24">
+            <div class="space-y-5 text-center">
+                <h2 class="text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-color_4 font-[600]">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna
+                    in sit nullam proin.
+                </p>
 
-        </footer>
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+                    <!-- progress-1 -->
+                    <div class="space-y-5">
+                        <div class="radial-progress bg-base-100 text-red-500 font-extrabold text-2xl "
+                            style="--value:70;" role="progressbar">
+                            <h4 class="text-[#131318]">87%</h4>
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h4 class="text-xl font-[600]">Prayer Facility</h4>
+                            <p class="text-color_4 font-[600] w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <!-- progress 2 -->
+                    <div class="space-y-5">
+                        <div class="radial-progress bg-base-100 text-green-500 font-extrabold text-2xl "
+                            style="--value:70;" role="progressbar">
+                            <h4 class="text-[#131318]">95%</h4>
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h4 class="text-xl font-[600]">Prayer Facility</h4>
+                            <p class="text-color_4 font-[600] w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <!-- progress 3 -->
+                    <div class="space-y-5">
+                        <div class="radial-progress bg-base-100 text-warning font-extrabold text-2xl "
+                            style="--value:70;" role="progressbar">
+                            <h4 class="text-[#131318]">90%</h4>
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h4 class="text-xl font-[600]">Prayer Facility</h4>
+                            <p class="text-color_4 font-[600] w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <!-- progress 4 -->
+                    <div class="space-y-5">
+                        <div class="radial-progress bg-base-100 text-info font-extrabold text-2xl "
+                            style="--value:70;" role="progressbar">
+                            <h4 class="text-[#131318]">80%</h4>
+                        </div>
+                        <div class="space-y-5 text-center">
+                            <h4 class="text-xl font-[600]">Prayer Facility</h4>
+                            <p class="text-color_4 font-[600] w-[70%] mx-auto">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
